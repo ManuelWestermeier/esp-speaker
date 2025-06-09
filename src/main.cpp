@@ -72,6 +72,8 @@ void setup()
 
   // Configure DAC pin
   dacWrite(AUDIO_PIN, 128); // mid-level
+  
+  startPlayback();
 
   // Timer interrupt for playback
   timer = timerBegin(0, 80, true); // prescaler 80 => 1MHz
